@@ -7,13 +7,13 @@ public class Greeter {
   private String name;
   private String bug;
   public Greeter(String language, String country, String name) {
-    locale = new Locale(language, country);
+    locale = new Locale(language, country);git
     this.name = name;
   }
 
   public String sayHello() {
     ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", locale);
-    return messages.getString("greeting") + ", " + name;
+    return messages.getString("greeting") + ", " + name.toUpperCase();
   }
 
   public static void main(String[] args) {
